@@ -14,6 +14,10 @@ define([
 
       if (typeof options === 'object') {
         this.each(function () {
+          if ( $( this ).hasClass( 'cfw-no-select2' ) ) {
+            return;
+          }
+
           var instanceOptions = $.extend(true, {}, options);
 
           var instance = new Select2($(this), instanceOptions);
