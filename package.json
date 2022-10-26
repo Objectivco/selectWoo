@@ -60,9 +60,9 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-gh-pages": "^2.0.0",
     "grunt-jekyll": "^0.4.2",
-    "grunt-sass": "^1.0.0",
+    "grunt-sass": "*",
     "grunt-saucelabs": "^9.0.0",
-    "node-sass": "^4.5.3",
+    "sass": "*",
     "request": "<=2.81.0",
     "shrinkwrap": "^0.4.0"
   },

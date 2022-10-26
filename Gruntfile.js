@@ -1,3 +1,4 @@
+const sass = require('sass');
 module.exports = function (grunt) {
   // Full list of files that must be included by RequireJS
   includes = [
@@ -252,6 +253,7 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
+          implementation: sass,
           outputStyle: 'compressed'
         },
         files: {
@@ -267,7 +269,8 @@ module.exports = function (grunt) {
       },
       dev: {
         options: {
-          outputStyle: 'nested'
+          implementation: sass,
+          outputStyle: 'expanded'
         },
         files: {
           'dist/css/select2.css': [
